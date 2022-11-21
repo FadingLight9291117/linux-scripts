@@ -1,0 +1,12 @@
+[Unit]
+Description=APK Server Service
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=/bin/bash /home/clz/scripts/rj.sh
+
+[Install]
+WantedBy=multi-user.target
